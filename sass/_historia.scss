@@ -1,0 +1,79 @@
+header{
+    font-family: 'Markazi';
+    font-size: 2rem;
+    text-align: center;
+    padding: 1px;
+    margin: 5px;
+    div.superior {
+        padding: 1rem;
+        background-color: black;
+         opacity: .7;
+    }
+    .escudo{
+        width: 500px;
+        align-items: center;
+    }
+}
+nav{
+    text-align: center;
+}
+.menu{
+    background-color: rgb(98, 151, 100);
+    font-size: 25px;
+    padding: 5px;
+    margin: 10px auto;
+    width: 85%;
+    list-style-type: none;
+    }
+.men li{
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    
+    font-size: 25px;
+}
+.men li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(151, 214, 151);
+    border-radius: 30%;
+}
+.retro{
+    text-align: center;
+    .history{
+        text-align: justify;
+        padding: 5px;
+        margin: auto;
+        height: 750px;
+        width: 1000px;
+        overflow: auto;
+        font-size: 1.7rem;
+        font-family: "Alegreya";
+    }
+    .rfoto {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 530px)
+    {
+    .men li a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        padding: 5px;
+        background-color: rgb(151, 214, 151);
+        border-radius: 30%;
+        font-size: 15px;
+    }
+    img.escudo{
+        width: 250px;
+    }
+    img.portada{
+        width: 200px;
+        padding: 5px;
+    }
+    img.rfoto{
+        width: 350px;
+    }
+    
+}

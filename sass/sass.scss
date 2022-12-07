@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@import "contacto";
+@import "galeria";
+@import "historia";
+@import "plantel";
+@font-face {
+    font-family: "Markazi";
+    src: url(../Fotos/Fuentes/MarkaziText-Bold.ttf);
+}
+@font-face {
+    font-family: "Alegreya";
+    src: url(../Fotos/Fuentes/AlegreyaSansSC-Bold.ttf);
+}
+body{
+    background: rgb(20,101,24);
+background: linear-gradient(90deg, rgba(20,101,24,1) 0%, rgba(253,255,253,0.9724264705882353) 48%, rgba(35,120,48,1) 100%);
+}
+.container {  display: grid;
+    grid-template-columns: 0.1fr 1.6fr 1.6fr 0.1fr;
+    grid-template-rows: 0.5fr 1.2fr 1.2fr 0.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header header"
+      ". menu menu ."
+      ". menu menu ."
+      "footer footer footer footer";
+    }
+.header { grid-area: header; }
+.footer { grid-area: footer; }
+.menu { grid-area: menu; }
+  
+.container {
+    header{
+        font-family: 'Markazi';
+        font-size: 2rem;
+        text-align: center;
+        padding: 1px;
+        margin: 5px;
+        div.superior {
+            padding: 1rem;
+            background-color: black;
+             opacity: .7;
+        }
+        .escudo{
+            width: 500px;
+            align-items: center;
+        }
+    }
+    nav{
+        text-align: center;
+    }
+    .menu{
+        background-color: rgb(98, 151, 100);
+        font-size: 25px;
+        padding: 5px;
+        margin: 10px auto;
+        width: 85%;
+        list-style-type: none;
+        .men li{
+            display: inline-block;
+            position: relative;
+            align-items: center;
+            
+            font-size: 25px;
+        }
+        .men li a{
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 10px;
+            background-color: rgb(151, 214, 151);
+            border-radius: 30%;
+        }
+        .portada{
+            text-align: center;
+            padding: 15px;
+            margin: 5;    
+        }
+        .noti{
+            display: inline-flex;
+            text-align: center;
+            padding: 5px;
+            margin: 10px;
+            .noticias1{
+                padding: 5px;
+                margin: 10px;
+                height: 500px;
+                overflow: auto;
+            }
+        }
+    } 
+    footer{
+        text-align: center;
+        font-size: 20px
+    }
+}
+h2{
+    font-size: 4rem;
+    text-align: center;
+    padding: 1rem;
+}
+h3{
+    font-family: "alegreya";
+    font-size: 3rem;
+}
+h4{
+    font-family: "alegreya";
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+}
+footer{
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    
+}
+
+@media only screen and (max-width: 530px)
+    {
+    .noti{
+        display: block;
+        font-size: 20px;
+    }
+    .menu li a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        padding: 5px;
+        background-color: rgb(151, 214, 151);
+        border-radius: 30%;
+        font-size: 15px;
+    }
+    img.escudo{
+        width: 300px;
+    }
+    img.portada{
+        width: 300px;
+        padding: 5px;
+    }
+    table{
+        padding: 10px;
+        font-size: 1rem;
+        border-color: black;
+    }
+    footer{
+        font-size: 10px
+    }
+    
+    img.rfoto{
+        width: 350px;
+    }
+    div .history{
+        padding: 5px;
+        height: 350px;
+        width: 350px;
+        overflow: auto;
+        font-size: 0.5rem;
+    }
+    fieldset{
+        padding: 5px;
+        margin: 5px;
+        font-size: 15px;
+        border-color: rgb(0, 0, 0);
+        border-width: 2px;
+        width: 350px;
+        text-align: left;
+        }
+}
