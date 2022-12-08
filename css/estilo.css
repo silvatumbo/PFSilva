@@ -41,15 +41,14 @@ nav {
   background-color: #97d697;
   border-radius: 30%; }
 
-form.cont {
+fieldset {
   padding: 15px;
   margin: 10px;
   font-size: 25px;
   border-color: black;
   border-width: 5px;
   width: 500px;
-  position: relative;
-  left: 37%; }
+  text-align: justify; }
 
 @media only screen and (max-width: 530px) {
   .men li a {
@@ -63,7 +62,17 @@ form.cont {
     width: 250px; }
   img.portada {
     width: 200px;
-    padding: 5px; } }
+    padding: 5px; }
+  main {
+    width: 500px; } }
+
+fieldset {
+  padding: 2px;
+  margin: 2px;
+  font-size: 15px;
+  border-color: black;
+  border-width: 2px;
+  width: 350px; }
 
 header {
   font-family: 'Markazi';
@@ -200,7 +209,16 @@ nav {
     width: 200px;
     padding: 5px; }
   img.rfoto {
-    width: 350px; } }
+    width: 350px; }
+  p {
+    margin: 10px;
+    padding: 5px;
+    height: 550px;
+    width: 350px;
+    overflow: auto;
+    font-size: 1rem;
+    position: relative;
+    left: 5%; } }
 
 header {
   font-family: 'Markazi';
@@ -366,21 +384,28 @@ footer {
   padding: 15px; }
 
 @media only screen and (max-width: 530px) {
+  img.escudo {
+    width: 250px; }
+  img.portada {
+    width: 200px;
+    padding: 5px; }
   .noti {
-    display: block;
+    display: flex;
+    flex-direction: column;
     font-size: 20px; }
-  .menu li a {
+    .noti .noticias1 {
+      padding: 2px;
+      margin: 5px;
+      height: 250px;
+      width: 410px;
+      overflow: auto; }
+  .men li {
     color: black;
     text-decoration: none;
     padding: 5px;
     background-color: #97d697;
     border-radius: 30%;
     font-size: 15px; }
-  img.escudo {
-    width: 300px; }
-  img.portada {
-    width: 300px;
-    padding: 5px; }
   table {
     padding: 10px;
     font-size: 1rem;
@@ -388,18 +413,4 @@ footer {
   footer {
     font-size: 10px; }
   img.rfoto {
-    width: 350px; }
-  div .history {
-    padding: 5px;
-    height: 350px;
-    width: 350px;
-    overflow: auto;
-    font-size: 0.5rem; }
-  fieldset {
-    padding: 5px;
-    margin: 5px;
-    font-size: 15px;
-    border-color: black;
-    border-width: 2px;
-    width: 350px;
-    text-align: left; } }
+    width: 350px; } }

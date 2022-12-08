@@ -123,11 +123,26 @@ footer{
 
 @media only screen and (max-width: 530px)
     {
+    img.escudo{
+            width: 250px;
+        }
+    img.portada{
+            width: 200px;
+            padding: 5px;
+        }
     .noti{
-        display: block;
+        display: flex;
+        flex-direction: column;
         font-size: 20px;
+        .noticias1{
+            padding: 2px;
+            margin: 5px;
+            height: 250px;
+            width: 410px;
+            overflow: auto;
+            }
     }
-    .menu li a{
+    .men li{
         color: rgb(0, 0, 0);
         text-decoration: none;
         padding: 5px;
@@ -135,13 +150,7 @@ footer{
         border-radius: 30%;
         font-size: 15px;
     }
-    img.escudo{
-        width: 300px;
-    }
-    img.portada{
-        width: 300px;
-        padding: 5px;
-    }
+    
     table{
         padding: 10px;
         font-size: 1rem;
@@ -153,21 +162,6 @@ footer{
     
     img.rfoto{
         width: 350px;
-    }
-    div .history{
-        padding: 5px;
-        height: 350px;
-        width: 350px;
-        overflow: auto;
-        font-size: 0.5rem;
-    }
-    fieldset{
-        padding: 5px;
-        margin: 5px;
-        font-size: 15px;
-        border-color: rgb(0, 0, 0);
-        border-width: 2px;
-        width: 350px;
-        text-align: left;
-        }
+    }   
+    
 }

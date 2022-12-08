@@ -75,5 +75,15 @@ nav{
     img.rfoto{
         width: 350px;
     }
+    p{
+        margin: 10px;
+        padding: 5px;
+        height: 550px;
+        width: 350px;
+        overflow: auto;
+        font-size: 1rem;
+        position: relative;
+        left: 5%;
+    }
     
 }
