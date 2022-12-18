@@ -39,14 +39,17 @@ nav{
     background-color: rgb(151, 214, 151);
     border-radius: 30%;
 }
-fieldset{
-    padding: 15px;
-    margin: 10px;
-    font-size: 25px;
-    border-color: rgb(0, 0, 0);
-    border-width: 5px;
-    width: 500px;
-    text-align: justify;
+form{
+    display: flex;
+    position: relative;
+    left: 40%;
+    fieldset{
+        div{
+            textarea{
+                width: 400px;
+            }
+        }
+    }
 }
 @media only screen and (max-width: 530px)
     {
@@ -65,15 +68,25 @@ fieldset{
         width: 200px;
         padding: 5px;
     }
-    main{
-        width: 500px;
     }
-        }
-    fieldset{
-        padding: 2px;
-        margin: 2px;
-        font-size: 15px;
-        border-color: rgb(0, 0, 0);
-        border-width: 2px;
+    main.cont{
         width: 350px;
-        }
+    }
+    form{
+        width: 350px;
+        position: relative;
+        left: 10px;
+        fieldset{
+            padding: 2px;
+            margin: 2px;
+            font-size: 15px;
+            border-color: rgb(0, 0, 0);
+            border-width: 2px;
+            width: 350px;
+            text-align: center;
+            textarea{
+                width: 150px;
+            }
+            }
+    }
+    

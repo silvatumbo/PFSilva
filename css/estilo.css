@@ -41,14 +41,12 @@ nav {
   background-color: #97d697;
   border-radius: 30%; }
 
-fieldset {
-  padding: 15px;
-  margin: 10px;
-  font-size: 25px;
-  border-color: black;
-  border-width: 5px;
-  width: 500px;
-  text-align: justify; }
+form {
+  display: flex;
+  position: relative;
+  left: 40%; }
+  form fieldset div textarea {
+    width: 400px; }
 
 @media only screen and (max-width: 530px) {
   .men li a {
@@ -62,17 +60,25 @@ fieldset {
     width: 250px; }
   img.portada {
     width: 200px;
-    padding: 5px; }
-  main {
-    width: 500px; } }
+    padding: 5px; } }
 
-fieldset {
-  padding: 2px;
-  margin: 2px;
-  font-size: 15px;
-  border-color: black;
-  border-width: 2px;
+main.cont {
   width: 350px; }
+
+form {
+  width: 350px;
+  position: relative;
+  left: 10px; }
+  form fieldset {
+    padding: 2px;
+    margin: 2px;
+    font-size: 15px;
+    border-color: black;
+    border-width: 2px;
+    width: 350px;
+    text-align: center; }
+    form fieldset textarea {
+      width: 150px; }
 
 header {
   font-family: 'Markazi';
@@ -258,12 +264,11 @@ nav {
   background-color: #97d697;
   border-radius: 30%; }
 
-table {
-  padding: 10px;
-  margin: auto;
-  text-align: center;
-  font-size: 2rem;
-  border-color: black; }
+section.jugadores {
+  margin: 15px;
+  padding: 10px; }
+  section.jugadores table {
+    font-size: 1.5rem; }
 
 @media only screen and (max-width: 530px) {
   .men li a {
@@ -309,59 +314,59 @@ body {
 .menu {
   grid-area: menu; }
 
-.container header {
-  font-family: 'Markazi';
-  font-size: 2rem;
-  text-align: center;
-  padding: 1px;
-  margin: 5px; }
-  .container header div.superior {
-    padding: 1rem;
-    background-color: black;
-    opacity: .7; }
-  .container header .escudo {
-    width: 500px;
-    align-items: center; }
-
-.container nav {
-  text-align: center; }
-
-.container .menu {
-  background-color: #629764;
-  font-size: 25px;
-  padding: 5px;
-  margin: 10px auto;
-  width: 85%;
-  list-style-type: none; }
-  .container .menu .men li {
-    display: inline-block;
-    position: relative;
-    align-items: center;
-    font-size: 25px; }
-  .container .menu .men li a {
-    color: black;
-    text-decoration: none;
-    padding: 10px;
-    background-color: #97d697;
-    border-radius: 30%; }
-  .container .menu .portada {
+.container {
+  height: 1500px; }
+  .container header {
+    font-family: 'Markazi';
+    font-size: 2rem;
     text-align: center;
-    padding: 15px;
-    margin: 5; }
-  .container .menu .noti {
-    display: inline-flex;
-    text-align: center;
+    padding: 1px;
+    margin: 5px; }
+    .container header div.superior {
+      padding: 1rem;
+      background-color: black;
+      opacity: .7; }
+    .container header .escudo {
+      width: 400px;
+      align-items: center; }
+  .container nav {
+    text-align: center; }
+  .container .menu {
+    background-color: #629764;
+    font-size: 25px;
     padding: 5px;
-    margin: 10px; }
-    .container .menu .noti .noticias1 {
+    margin: 10px auto;
+    width: auto;
+    height: 900px;
+    list-style-type: none; }
+    .container .menu .men li {
+      display: inline-block;
+      position: relative;
+      align-items: center;
+      font-size: 25px; }
+    .container .menu .men li a {
+      color: black;
+      text-decoration: none;
+      padding: 10px;
+      background-color: #97d697;
+      border-radius: 30%; }
+    .container .menu .portada {
+      text-align: center;
+      padding: 15px;
+      margin: 5; }
+    .container .menu .noti {
+      display: inline-flex;
+      text-align: center;
       padding: 5px;
-      margin: 10px;
-      height: 500px;
-      overflow: auto; }
-
-.container footer {
-  text-align: center;
-  font-size: 20px; }
+      margin: 10px; }
+      .container .menu .noti .noticias1 {
+        padding: 5px;
+        margin: 10px;
+        height: 300px;
+        overflow: auto; }
+  .container footer {
+    text-align: center;
+    font-size: 20px; }
 
 h2 {
   font-size: 4rem;
@@ -385,20 +390,21 @@ footer {
 
 @media only screen and (max-width: 530px) {
   img.escudo {
-    width: 250px; }
+    width: 250px;
+    padding: 5px; }
   img.portada {
     width: 200px;
     padding: 5px; }
   .noti {
     display: flex;
     flex-direction: column;
-    font-size: 20px; }
+    font-size: 20px;
+    height: 500px; }
     .noti .noticias1 {
       padding: 2px;
       margin: 5px;
-      height: 250px;
-      width: 410px;
-      overflow: auto; }
+      height: 200px;
+      width: 380px; }
   .men li {
     color: black;
     text-decoration: none;
@@ -406,10 +412,6 @@ footer {
     background-color: #97d697;
     border-radius: 30%;
     font-size: 15px; }
-  table {
-    padding: 10px;
-    font-size: 1rem;
-    border-color: black; }
   footer {
     font-size: 10px; }
   img.rfoto {
